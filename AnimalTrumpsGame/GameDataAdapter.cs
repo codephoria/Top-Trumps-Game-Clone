@@ -8,8 +8,14 @@ namespace AnimalTrumpsGame
     {
         public static Card[] CreateGameCards(TrumpsGameData gameData)
         {
-            Card[] cards = new Card[gameData.NumberOfCards];
+            int numberOfCards = gameData.NumberOfCards;
+            Card[] cards = new Card[numberOfCards];
 
+            for (int i = 0; i < numberOfCards - 1; i++)
+            {
+                Card card = new Card(gameData.GetName(i), gameData.GetProp1(i), gameData.GetProp2(i), gameData.GetProp3(i), gameData.GetProp4(i));
+                cards[i] = card;
+            }
 
 
             return cards;
