@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AnimalTrumpsGame
 {
-    class StandardGameData : TrumpsGameData
+    class StandardGameData : ITrumpsGameData
     {
         private string topic;
         public string Topic

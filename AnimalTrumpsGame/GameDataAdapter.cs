@@ -6,7 +6,7 @@ namespace AnimalTrumpsGame
 {
     static class GameDataAdapter
     {
-        public static Card[] CreateGameCards(TrumpsGameData gameData)
+        public static Card[] CreateGameCards(ITrumpsGameData gameData)
         {
             int numberOfCards = gameData.NumberOfCards;
             Card[] cards = new Card[numberOfCards];

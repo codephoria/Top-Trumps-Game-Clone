@@ -7,7 +7,7 @@ namespace AnimalTrumpsGame
     class GameManager
     {
         MainWindow mainWindow;
-        private TrumpsGameData gameData;
+        private ITrumpsGameData gameData;
         private Card[] cardDeck;
 
         public GameManager(MainWindow mainWindow)
@@ -16,7 +16,7 @@ namespace AnimalTrumpsGame
         }
 
 
-        public void StartNewGame(TrumpsGameData gameData)
+        public void StartNewGame(ITrumpsGameData gameData)
         {
             this.gameData = gameData;
             mainWindow.ChangeTitle(gameData.Topic);

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AnimalTrumpsGame
 {
-    interface TrumpsGameData
+    interface ITrumpsGameData
     {
         string Topic { get; }
 

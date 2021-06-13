@@ -24,7 +24,7 @@ namespace AnimalTrumpsGame
         {
             InitializeComponent();
             GameManager gameManager = new GameManager(this);
-            TrumpsGameData gameData = new AnimalData();
+            ITrumpsGameData gameData = new AnimalData();
             gameManager.StartNewGame(gameData);
         }
 
