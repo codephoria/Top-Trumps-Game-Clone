@@ -25,12 +25,12 @@ namespace AnimalTrumpsGame
 
         private string[] Labels =
         {
-            "Name", "Height", "Weight", "Age", "Legs"
+            "Label for specific card name", "Label for first value", "Label for second value", "Label for third value", "Label for fourth value"
         };
 
         private string[,] CardValues = {
-            {"Name", "Height", "Weight", "Age", "Legs", "🐸"}, // values for first card
-            {"Name", "Height", "Weight", "Age", "Legs", "🐸"}, // values for second card
+            {"Name", "First value", "Second value", "Third value", "Fourth value", "🐸"}, // values for first card
+            {"Name", "Height", "Weight", "Age", "Legs", "🐸"}, // values for second card (examples)
             // add as many cards as you wish
         };
 
