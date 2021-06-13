@@ -23,9 +23,14 @@ namespace AnimalTrumpsGame
         public MainWindow()
         {
             InitializeComponent();
-            GameManager gameManager = new GameManager();
+            GameManager gameManager = new GameManager(this);
             TrumpsGameData gameData = new AnimalData();
             gameManager.StartNewGame(gameData);
+        }
+
+        public void ChangeTitle(string newTitle)
+        {
+            this.Title = newTitle;
         }
     }
 }

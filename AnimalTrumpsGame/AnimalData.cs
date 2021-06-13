@@ -10,7 +10,7 @@ namespace AnimalTrumpsGame
         public string Topic { 
             get
             {
-                return "Animals";
+                return "Top Animals";
             }
         }
 
@@ -49,7 +49,7 @@ namespace AnimalTrumpsGame
 
         public string GetName(int index)
         {
-            if (index >= 0 && index < AnimalValues.Length - 1)
+            if (index >= 0 && index < (AnimalValues.Rank - 1))
             {
                 return AnimalValues[index, 0];
             } else
@@ -61,7 +61,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp1(int index)
         {
-            if (index >= 0 && index < AnimalValues.Length - 1)
+            if (index >= 0 && index < AnimalValues.Rank - 1)
             {
                 return AnimalValues[index, 1];
             }
@@ -73,7 +73,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp2(int index)
         {
-            if (index >= 0 && index < AnimalValues.Length - 1)
+            if (index >= 0 && index < AnimalValues.Rank - 1)
             {
                 return AnimalValues[index, 2];
             }
@@ -85,7 +85,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp3(int index)
         {
-            if (index >= 0 && index < AnimalValues.Length - 1)
+            if (index >= 0 && index < AnimalValues.Rank - 1)
             {
                 return AnimalValues[index, 3];
             }
@@ -97,7 +97,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp4(int index)
         {
-            if (index >= 0 && index < AnimalValues.Length - 1)
+            if (index >= 0 && index < AnimalValues.Rank - 1)
             {
                 return AnimalValues[index, 4];
             }
