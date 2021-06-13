@@ -6,14 +6,17 @@ namespace AnimalTrumpsGame
 {
     class Card
     {
+
+        public string Emoji { get; private set; }
         public string Name { get; private set; }
         public string Prop1 { get; private set; }
         public string Prop2 { get; private set; }
         public string Prop3 { get; private set; }
         public string Prop4 { get; private set; }
 
-        public Card(string name, string prop1, string prop2, string prop3, string prop4)
+        public Card(string emoji, string name, string prop1, string prop2, string prop3, string prop4)
         {
+            this.Emoji = emoji;
             this.Name = name;
             this.Prop1 = prop1;
             this.Prop2 = prop2;

@@ -16,6 +16,8 @@ namespace AnimalTrumpsGame
         string GetProp2(int index);
         string GetProp3(int index);
         string GetProp4(int index);
-        
+        string GetEmoji(int index);
+
+
     }
 }

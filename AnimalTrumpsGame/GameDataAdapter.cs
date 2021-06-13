@@ -13,7 +13,7 @@ namespace AnimalTrumpsGame
 
             for (int i = 0; i < numberOfCards - 1; i++)
             {
-                Card card = new Card(gameData.GetName(i), gameData.GetProp1(i), gameData.GetProp2(i), gameData.GetProp3(i), gameData.GetProp4(i));
+                Card card = new Card(gameData.GetEmoji(i), gameData.GetName(i), gameData.GetProp1(i), gameData.GetProp2(i), gameData.GetProp3(i), gameData.GetProp4(i));
                 cards[i] = card;
             }
 

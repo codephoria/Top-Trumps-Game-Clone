@@ -28,11 +28,11 @@ namespace AnimalTrumpsGame
         };
 
         private string[,] AnimalValues = {
-            {"Name", "Height", "Weight", "Age", "Legs"},
-            {"Name", "Height", "Weight", "Age", "Legs"},
-            {"Name", "Height", "Weight", "Age", "Legs"},
-            {"Name", "Height", "Weight", "Age", "Legs"},
-            {"Name", "Height", "Weight", "Age", "Legs"}
+            {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
+            {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
+            {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
+            {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
+            {"Name", "Height", "Weight", "Age", "Legs", "🐸"}
         };
 
         public string GetLabel(int index)
@@ -100,6 +100,18 @@ namespace AnimalTrumpsGame
             if (index >= 0 && index < AnimalValues.Rank - 1)
             {
                 return AnimalValues[index, 4];
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public string GetEmoji(int index)
+        {
+            if (index >= 0 && index < AnimalValues.Rank - 1)
+            {
+                return AnimalValues[index, 5];
             }
             else
             {
