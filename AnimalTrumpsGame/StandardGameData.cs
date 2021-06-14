@@ -19,7 +19,7 @@ namespace AnimalTrumpsGame
         {
             get
             {
-                return CardValues.Rank;
+                return CardValues.GetLength(0);
             }
         }
 
@@ -55,7 +55,7 @@ namespace AnimalTrumpsGame
 
         public string GetName(int index)
         {
-            if (index >= 0 && index < (CardValues.Rank - 1))
+            if (index >= 0 && index < (CardValues.GetLength(0)))
             {
                 return CardValues[index, 0];
             }
@@ -68,7 +68,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp1(int index)
         {
-            if (index >= 0 && index < CardValues.Rank - 1)
+            if (index >= 0 && index < CardValues.GetLength(0))
             {
                 return CardValues[index, 1];
             }
@@ -80,7 +80,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp2(int index)
         {
-            if (index >= 0 && index < CardValues.Rank - 1)
+            if (index >= 0 && index < CardValues.GetLength(0))
             {
                 return CardValues[index, 2];
             }
@@ -92,7 +92,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp3(int index)
         {
-            if (index >= 0 && index < CardValues.Rank - 1)
+            if (index >= 0 && index < CardValues.GetLength(0))
             {
                 return CardValues[index, 3];
             }
@@ -104,7 +104,7 @@ namespace AnimalTrumpsGame
 
         public string GetProp4(int index)
         {
-            if (index >= 0 && index < CardValues.Rank - 1)
+            if (index >= 0 && index < CardValues.GetLength(0))
             {
                 return CardValues[index, 4];
             }
@@ -116,7 +116,7 @@ namespace AnimalTrumpsGame
 
         public string GetEmoji(int index)
         {
-            if (index >= 0 && index < CardValues.Rank - 1)
+            if (index >= 0 && index < CardValues.GetLength(0))
             {
                 return CardValues[index, 5];
             }
