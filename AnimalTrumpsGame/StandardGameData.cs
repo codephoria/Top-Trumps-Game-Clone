@@ -19,7 +19,7 @@ namespace AnimalTrumpsGame
         {
             get
             {
-                return CardValues.Length;
+                return CardValues.Rank;
             }
         }
 

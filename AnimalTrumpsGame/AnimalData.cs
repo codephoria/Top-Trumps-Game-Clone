@@ -13,10 +13,10 @@ namespace AnimalTrumpsGame
             },
             new string[,] {
             {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
-            {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
-            {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
-            {"Name", "Height", "Weight", "Age", "Legs", "🐸"},
-            {"Name", "Height", "Weight", "Age", "Legs", "🐸"}
+            {"Name", "Height", "Weight", "Age", "Legs", "🦁"},
+            {"Name", "Height", "Weight", "Age", "Legs", "🦓"},
+            {"Name", "Height", "Weight", "Age", "Legs", "🐔"},
+            {"Name", "Height", "Weight", "Age", "Legs", "🐍"}
         })
         { }
 
