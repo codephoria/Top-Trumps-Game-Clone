@@ -6,15 +6,15 @@ namespace AnimalTrumpsGame
 {
     static class GameDataAdapter
     {
-        public static Card[] CreateGameCards(ITrumpsGameData gameData)
+        public static List<Card> CreateGameCards(ITrumpsGameData gameData)
         {
             int numberOfCards = gameData.NumberOfCards;
-            Card[] cards = new Card[numberOfCards];
+            List<Card> cards = new List<Card>();
 
             for (int i = 0; i < numberOfCards; i++)
             {
                 Card card = new Card(gameData.GetEmoji(i), gameData.GetName(i), gameData.GetProp1(i), gameData.GetProp2(i), gameData.GetProp3(i), gameData.GetProp4(i));
-                cards[i] = card;
+                cards.Add(card);
             }
 
 

@@ -6,9 +6,9 @@ namespace AnimalTrumpsGame
 {
     class Player
     {
-        private Card[] hand;
+        private List<Card> hand;
 
-        public Card[] Hand
+        public List<Card> Hand
         {
             set
             {

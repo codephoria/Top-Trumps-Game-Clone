@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Text;
 
 namespace AnimalTrumpsGame
@@ -8,7 +9,7 @@ namespace AnimalTrumpsGame
     {
         MainWindow mainWindow;
         private ITrumpsGameData gameData;
-        private Card[] cardDeck;
+        private List<Card> cardDeck;
 
         private bool yourTurn = false;
         static int numberOfPlayers = 2;
