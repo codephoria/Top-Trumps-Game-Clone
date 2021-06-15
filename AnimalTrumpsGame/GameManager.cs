@@ -10,8 +10,8 @@ namespace AnimalTrumpsGame
         private ITrumpsGameData gameData;
         private Card[] cardDeck;
 
-        bool yourTurn = false;
-        int numberOfPlayers = 2;
+        private bool yourTurn = false;
+        static int numberOfPlayers = 2;
 
         Player player;
         Player computer;
@@ -36,8 +36,8 @@ namespace AnimalTrumpsGame
         private void SetUpGame()
         {
             cardDeck = GameDataAdapter.CreateGameCards(gameData);
-            
-            ShuffleCards(cardDeck);
+            HelperMethods.ShuffleCards(cardDeck);
+            HelperMethods.DealCards(cardDeck, player, computer);
 
             // random player has first turn
             yourTurn = Convert.ToBoolean(random.Next(2));
@@ -48,20 +48,6 @@ namespace AnimalTrumpsGame
             
         }
 
-        private Card[] ShuffleCards (Card[] unshuffledCardArray)
-        {
-            Card[] cardArray = unshuffledCardArray;
-
-            // Knuth/Fisher-Yates shuffle
-            for (int i = cardArray.Length - 1; i > 0; i--)
-            {
-                int randomIndex = random.Next(0, i + 1);
-
-                Card temp = cardArray[i];
-                cardArray[i] = cardArray[randomIndex];
-                cardArray[randomIndex] = temp;
-            }
-            return cardArray;
-        }
+        
     }
 }
