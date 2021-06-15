@@ -13,11 +13,16 @@ namespace AnimalTrumpsGame
         bool yourTurn = false;
         int numberOfPlayers = 2;
 
+        Player player;
+        Player computer;
+
         public static Random random = new Random();
 
         public GameManager(MainWindow mainWindow)
         {
             this.mainWindow = mainWindow;
+            player = new Player();
+            computer = new Player();
         }
 
 
@@ -33,6 +38,11 @@ namespace AnimalTrumpsGame
             cardDeck = GameDataAdapter.CreateGameCards(gameData);
             
             ShuffleCards(cardDeck);
+
+            // random player has first turn
+            yourTurn = Convert.ToBoolean(random.Next(2));
+
+            
 
            
             
